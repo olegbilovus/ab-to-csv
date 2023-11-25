@@ -71,7 +71,7 @@ def add_extra_data(e_data, out_csv):
         values[i] = v
 
     out_csv[0] = ','.join(headers) + '\n'
-    out_csv[-1] = ','.join(values)
+    out_csv[-1] = ','.join(values) + '\n'
 
 
 if __name__ == '__main__':
