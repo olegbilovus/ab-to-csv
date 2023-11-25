@@ -37,7 +37,7 @@ In case you need to add extra data such as the machine's specs, you can  use the
 ```bash
 ab -n 10000 -c 150 http://127.0.0.1:8090/static-20k.html | python abToCSV.py --stdin --out out.csv -a --extra_data "ram=2048 vcpu=2"
 ```
-###### CSV file example:
+###### CSV file example
 
 |server|host|port|path|doc_len|conc|time|r_comp|r_fail|rps|tpr|tpr_all|50|66|75|80|90|95|98|99|100|ram|vcpu|
 |------|----|----|----|-------|----|----|------|------|---|---|-------|--|--|--|--|--|--|--|--|---|---|----|
